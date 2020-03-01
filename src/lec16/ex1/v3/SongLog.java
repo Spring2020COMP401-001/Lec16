@@ -1,8 +1,8 @@
-package lec14.ex1.v2;
+package lec16.ex1.v3;
 
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class SongLog {
 
@@ -28,6 +28,22 @@ public class SongLog {
 			LoggedSong  next_song = logged_song_list.get(i);
 			if (next_song.equals(s)) {
 				return next_song.getDate();
+			}
+		}
+		return null;
+	}
+	
+	public Song getFirstSongPlayedAfter(Date d) {
+
+//		for (LoggedSong s : logged_song_list) {
+//			if (s.getDate().compareTo(d) > 0) {
+//				return s;
+//			}
+//		}
+
+		for (LoggedSong s : logged_song_list) {
+			if (s.getDate().compareTo(d) > 0) {
+				return s.getWrappedSong();
 			}
 		}
 		return null;

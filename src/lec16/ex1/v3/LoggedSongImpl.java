@@ -1,4 +1,4 @@
-package lec14.ex1.v2;
+package lec16.ex1.v3;
 
 import java.util.Date;
 
@@ -22,5 +22,9 @@ public class LoggedSongImpl implements LoggedSong {
 	
 	public String getName() {
 		return song.getName();
+	}
+	
+	public Song getWrappedSong() {
+		return song;
 	}
 }

@@ -1,4 +1,4 @@
-package lec14.ex2;
+package lec16.ex2;
 
 public interface ItemWithTax extends Item {
 

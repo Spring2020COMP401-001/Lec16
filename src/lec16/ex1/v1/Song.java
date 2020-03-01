@@ -1,4 +1,4 @@
-package lec14.ex1.v2;
+package lec16.ex1.v1;
 
 public interface Song {
 	String getName();

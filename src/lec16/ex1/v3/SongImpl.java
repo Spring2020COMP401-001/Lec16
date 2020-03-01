@@ -1,4 +1,4 @@
-package lec14.ex1.v1;
+package lec16.ex1.v3;
 
 public class SongImpl implements Song {
 
